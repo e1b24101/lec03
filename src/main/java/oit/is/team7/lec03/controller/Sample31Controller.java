@@ -38,4 +38,9 @@ public class Sample31Controller {
     model.addAttribute("login_user", loginUser);
     return "sample31.html";
   }
+
+  @GetMapping("step3")
+  public String sample33() {
+    return "sample33.html";
+  }
 }
