@@ -49,8 +49,9 @@ public class Sample3AuthConfiguration {
     UserDetails user1 = User.withUsername("user1")
         .password("{bcrypt}$2y$10$87Q4l6yuj4gijmuoXITueOT3KAq86HElTFTmpwB.qaWFp3EvlZ1VK").roles("USER").build();
     UserDetails user2 = User.withUsername("user2")
-        .password("{bcrypt}$2y$10$ngxCDmuVK1TaGchiYQfJ1OAKkd64IH6skGsNw1sLabrTICOHPxC0e").roles("USER").build();
+        .password("{bcrypt}$2y$10$87Q4l6yuj4gijmuoXITueOT3KAq86HElTFTmpwB.qaWFp3EvlZ1VK").roles("ADMIN").build();
 
+    // "{bcrypt}$2y$10$ngxCDmuVK1TaGchiYQfJ1OAKkd64IH6skGsNw1sLabrTICOHPxC0e"
 
     // 生成したユーザをImMemoryUserDetailsManagerに渡す（いくつでも良い）
     return new InMemoryUserDetailsManager(user1, user2);
